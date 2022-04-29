@@ -3,17 +3,17 @@ package jedis;
 import redis.clients.jedis.Jedis;
 
 /**
- * ²âÊÔredisÊı¾İ¿âµÄÁ¬½Ó
- * ²âÊÔÇ°£¬±ØĞë´ò¿ªredis·şÎñ¶Ë
+ * æµ‹è¯•redisæ•°æ®åº“çš„è¿æ¥
+ * æµ‹è¯•å‰ï¼Œå¿…é¡»æ‰“å¼€redisæœåŠ¡ç«¯
  */
 public class RedisJava {
     public static void main(String[] args) {
-        //Á¬½Ó±¾µØµÄ Redis ·şÎñ
+        //è¿æ¥æœ¬åœ°çš„ Redis æœåŠ¡
         Jedis jedis = new Jedis("localhost");
-        // Èç¹û Redis ·şÎñÉèÖÃÁËÃÜÂë£¬ĞèÒªÏÂÃæÕâĞĞ£¬Ã»ÓĞ¾Í²»ĞèÒª
+        // å¦‚æœ Redis æœåŠ¡è®¾ç½®äº†å¯†ç ï¼Œéœ€è¦ä¸‹é¢è¿™è¡Œï¼Œæ²¡æœ‰å°±ä¸éœ€è¦
         // jedis.auth("123456"); 
-        System.out.println("Á¬½Ó³É¹¦");
-        //²é¿´·şÎñÊÇ·ñÔËĞĞ
-        System.out.println("·şÎñÕıÔÚÔËĞĞ: "+jedis.ping());
+        System.out.println("è¿æ¥æˆåŠŸ");
+        //æŸ¥çœ‹æœåŠ¡æ˜¯å¦è¿è¡Œ
+        System.out.println("æœåŠ¡æ­£åœ¨è¿è¡Œ: "+jedis.ping());
     }
 }

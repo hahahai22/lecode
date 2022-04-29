@@ -1,9 +1,9 @@
 package twoSum;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
- * @date 2022/3/16 9:23 ÉÏÎç
+ * @date 2022/3/16 9:23 ä¸Šåˆ
  */
 public class Test {
     public static void main(String[] args) {

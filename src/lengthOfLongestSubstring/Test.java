@@ -1,7 +1,7 @@
 package lengthOfLongestSubstring;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
  * @date 2022/3/20 21:30
  */

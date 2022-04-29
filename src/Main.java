@@ -3,10 +3,10 @@
 //    public static void main(String[] args) {
 //	// write your code here
 //        /*
-//        // ´´½¨Ò»¸öÊı×é
+//        // åˆ›å»ºä¸€ä¸ªæ•°ç»„
 //        // int[] myList1 = {1, 2, 3, 4, 5, 6, 7};
 //        int[] myList2 = new int[]{4, 3, 2, 1};
-//        // Ê¹ÓÃfor-eachÑ­»·»òÕß½Ğ×öÔöÇ¿Ñ­»·´¦ÀíÊı×é
+//        // ä½¿ç”¨for-eachå¾ªç¯æˆ–è€…å«åšå¢å¼ºå¾ªç¯å¤„ç†æ•°ç»„
 //        for (int element :
 //                myList2) {
 //            System.out.println(element);

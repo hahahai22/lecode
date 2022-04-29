@@ -1,13 +1,13 @@
 package addTwoNumbers;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
- * @date 2022/3/16 10:04 ÉÏÎç
+ * @date 2022/3/16 10:04 ä¸Šåˆ
  */
 public class ListNode {
-    public int val;     // ½ÚµãÖµ
-    public ListNode next;   // ÏÂÒ»¸ö½Úµã
+    public int val;     // èŠ‚ç‚¹å€¼
+    public ListNode next;   // ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
 
     public ListNode() {
     }
@@ -22,7 +22,7 @@ public class ListNode {
         this.next = next;
     }
 
-    //print·½·¨±ãÓÚ×îºó²é¿´½á¹û
+    //printæ–¹æ³•ä¾¿äºæœ€åæŸ¥çœ‹ç»“æœ
     public void print() {
         System.out.print(this.val);
         if (this.next != null) {

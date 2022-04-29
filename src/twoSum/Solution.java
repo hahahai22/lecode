@@ -1,9 +1,9 @@
 package twoSum;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
- * @date 2022/3/16 9:23 ÉÏÎç
+ * @date 2022/3/16 9:23 ä¸Šåˆ
  */
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -15,6 +15,6 @@ class Solution {
                 }
             }
         }
-        return new int[0];  // ±£Ö¤³ÌĞò²»±¨´í
+        return new int[0];  // ä¿è¯ç¨‹åºä¸æŠ¥é”™
     }
 }

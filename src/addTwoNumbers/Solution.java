@@ -1,39 +1,39 @@
 package addTwoNumbers;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
- * @date 2022/3/16 9:30 ÉÏÎç
+ * @date 2022/3/16 9:30 ä¸Šåˆ
  */
 
-// ÕâÀïµÄListNodeÀàĞèÒª×Ô¼ºÊµÏÖ£¬È»ºóÊ¹ÓÃÊµÏÖµÄÀàµ÷ÓÃÀàÖĞµÄ²ÎÊı£¬·½·¨¡£
+// è¿™é‡Œçš„ListNodeç±»éœ€è¦è‡ªå·±å®ç°ï¼Œç„¶åä½¿ç”¨å®ç°çš„ç±»è°ƒç”¨ç±»ä¸­çš„å‚æ•°ï¼Œæ–¹æ³•ã€‚
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode head = null, tail = null;  // ÑÆ½Úµã£º³õÊ¼ÖµÎªnullµÄ½Úµã
-        int carry = 0;  // ½øÎ»Öµ
-        while (l1 != null || l2 != null) {  // µ±ÓĞÒ»¸öÁ´±íÎ´´ïµ½Ä©Î²£¨²»Îªnull£©
-            // ÕâÀïµÄÓÅÏÈ¼¶ÊÇÏÈ != ; ?: ; =
-            // n1,n2ÊÇÁ´±íÏàÓ¦Î»ÖÃµÄÊı×Ö
-            int n1 = l1 != null ? l1.val : 0;   // Á´±íÎª¿Õ¾Í¸³0Öµ£¬±£³ÖÁ½¸öÁ´±í¾ßÓĞÏàÍ¬µÄÎ»Êı
+        ListNode head = null, tail = null;  // å“‘èŠ‚ç‚¹ï¼šåˆå§‹å€¼ä¸ºnullçš„èŠ‚ç‚¹
+        int carry = 0;  // è¿›ä½å€¼
+        while (l1 != null || l2 != null) {  // å½“æœ‰ä¸€ä¸ªé“¾è¡¨æœªè¾¾åˆ°æœ«å°¾ï¼ˆä¸ä¸ºnullï¼‰
+            // è¿™é‡Œçš„ä¼˜å…ˆçº§æ˜¯å…ˆ != ; ?: ; =
+            // n1,n2æ˜¯é“¾è¡¨ç›¸åº”ä½ç½®çš„æ•°å­—
+            int n1 = l1 != null ? l1.val : 0;   // é“¾è¡¨ä¸ºç©ºå°±èµ‹0å€¼ï¼Œä¿æŒä¸¤ä¸ªé“¾è¡¨å…·æœ‰ç›¸åŒçš„ä½æ•°
             int n2 = l2 != null ? l2.val : 0;
             int sum = n1 + n2 + carry;
             if (head == null) {
                 head = tail = new ListNode(sum % 10);
             } else {
-                tail.next = new ListNode(sum % 10); // ½ÚµãºóÒÆ
+                tail.next = new ListNode(sum % 10); // èŠ‚ç‚¹åç§»
             }
-            carry = sum / 10;   // ¼ÆËã½øÎ»Êı
-            if (l1 != null) {   // Èç¹ûl1µÄ½Úµã²»ÎªnullÊ±£¬½«l1µÄ½ÚµãºóÒÆ
+            carry = sum / 10;   // è®¡ç®—è¿›ä½æ•°
+            if (l1 != null) {   // å¦‚æœl1çš„èŠ‚ç‚¹ä¸ä¸ºnullæ—¶ï¼Œå°†l1çš„èŠ‚ç‚¹åç§»
                 l1 = l1.next;
             }
             if (l2 != null) {
                 l2 = l2.next;
             }
         }
-        if (carry > 0) {    // Èç¹û×îºóÁ½¸ö½ÚµãÏà¼ÓÓĞ½øÎ»Êı£¬Á´±íÌí¼ÓĞÂ½Úµã¡£
+        if (carry > 0) {    // å¦‚æœæœ€åä¸¤ä¸ªèŠ‚ç‚¹ç›¸åŠ æœ‰è¿›ä½æ•°ï¼Œé“¾è¡¨æ·»åŠ æ–°èŠ‚ç‚¹ã€‚
             tail.next = new ListNode(carry);
         }
-        return head;    // ·µ»ØÁ´±íµÄÍ·½Úµã
+        return head;    // è¿”å›é“¾è¡¨çš„å¤´èŠ‚ç‚¹
     }
 
 }

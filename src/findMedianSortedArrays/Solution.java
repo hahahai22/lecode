@@ -1,7 +1,7 @@
 package findMedianSortedArrays;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
  * @date 2022/4/6 18:51
  */
@@ -9,11 +9,11 @@ public class Solution {
     public double findMedianSortedArrays(int[] num1, int[] num2) {
         int length1 = num1.length, length2 = num2.length;
         int totalLength = length1 + length2;
-        if (totalLength % 2 == 1) { // È¡ÓàÊÇÒ»£¬±íÊ¾ÊÇÆæÊı¸öÔªËØ¡£
+        if (totalLength % 2 == 1) { // å–ä½™æ˜¯ä¸€ï¼Œè¡¨ç¤ºæ˜¯å¥‡æ•°ä¸ªå…ƒç´ ã€‚
             int midIndex = totalLength / 2;
-            double median = getKthElement(num1, num2, midIndex + 1);    // midIndex + 1 ±íÊ¾ÖĞ¼äµÄÔªËØµÄË÷Òı¡£
+            double median = getKthElement(num1, num2, midIndex + 1);    // midIndex + 1 è¡¨ç¤ºä¸­é—´çš„å…ƒç´ çš„ç´¢å¼•ã€‚
             return median;
-        } else {    // ÔªËØ¸öÊıÊÇÅ¼Êı¸ö¡£
+        } else {    // å…ƒç´ ä¸ªæ•°æ˜¯å¶æ•°ä¸ªã€‚
             int midIndex1 = totalLength / 2 - 1, midIndex2 = totalLength / 2;
             double median = (getKthElement(num1, num2, midIndex1 + 1) + getKthElement(num1, num2, midIndex2 + 1)) / 2.0;
             return median;
@@ -21,11 +21,11 @@ public class Solution {
     }
 
     public int getKthElement(int[] num1, int[] num2, int k) {
-        // ±ß½çÇé¿ö
+        // è¾¹ç•Œæƒ…å†µ
 
 
 
-        // Õı³£Çé¿ö
+        // æ­£å¸¸æƒ…å†µ
 
         return 0;
     }

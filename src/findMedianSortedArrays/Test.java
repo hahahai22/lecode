@@ -1,7 +1,7 @@
 package findMedianSortedArrays;
 
 /**
- * @author ½¹º£Áú
+ * @author ç„¦æµ·é¾™
  * @version 2021.2
  * @date 2022/4/6 18:51
  */
