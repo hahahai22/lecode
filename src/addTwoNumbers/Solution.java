@@ -17,7 +17,7 @@ class Solution {
             int n1 = l1 != null ? l1.val : 0;   // 链表为空就赋0值，保持两个链表具有相同的位数
             int n2 = l2 != null ? l2.val : 0;
             int sum = n1 + n2 + carry;
-            if (head == null) {
+            if (head == null) {   // 这是什么情况下?
                 head = tail = new ListNode(sum % 10);
             } else {
                 tail.next = new ListNode(sum % 10); // 节点后移
